@@ -1,0 +1,14 @@
+<!-- post.html -->
+{% extends 'base.html' %}
+
+{% block title %}
+	{{ post.title }} - 文学天地
+{% endblock %}
+
+{% block headmessage %}
+	<h3>{{ post.title }}</h3>
+{% endblock %}
+
+{% block content %}
+	<div>{{ postText | safe }}</div>
+{% endblock %}
